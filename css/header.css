@@ -1,0 +1,37 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.cart img {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.cart_total {
+    color: orange;
+    position: absolute;
+    right: 120px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cart_subtotal {
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 4px 10px;
+    position: absolute;
+    top: -40px;
+    right: -100px;
+}
+
+.logo {
+    width: 80px;
+}
+
