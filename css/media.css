@@ -134,6 +134,10 @@
         -moz-box-shadow: 5px 8px 15px -3px rgba(34, 60, 80, 0.2);
         box-shadow: 5px 8px 15px -3px rgba(34, 60, 80, 0.2);
     }
+    
+    .app .main .main_content_wrapper .products_list .prod_content .description .btn_wrapper {
+        display: block;
+    }
 
     .app .main {
         display: flex;
