@@ -39,16 +39,22 @@ class Product {
                 "(?:^|; )" + 'data'.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
                 ));
             value = matches ? decodeURIComponent(matches[1]) : undefined;
-    
-            value = JSON.parse(value);
             
-            let id = product.id;
-            console.log(value);
-            value.push(id);
-            console.log(value)
-            value = JSON.stringify(value);
-            document.cookie = `data=${value}`;
-            updateCart()
+            if(value) {
+                value = JSON.parse(value);
+                let id = product.id;
+                value.push(id);
+                value = JSON.stringify(value);
+                document.cookie = `data=${value}`;
+                updateCart()
+            } else {
+                let id = product.id;
+                value.push(id);
+                value = JSON.stringify(value);
+                document.cookie = `data=${value}`;
+                updateCart()
+            }
+                    
         }
 
         productShow.querySelector('.to_cart').addEventListener('click', addToCart)
