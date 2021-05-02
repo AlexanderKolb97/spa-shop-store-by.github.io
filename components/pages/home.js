@@ -5,7 +5,6 @@ class Home {
     }
 
     init() {
-        console.log(location)
         let header = document.createElement('h1');
         header.innerHTML = 'Welcome to our service!';
         header.classList.add('header_main')
