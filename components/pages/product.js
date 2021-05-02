@@ -13,7 +13,6 @@ class Product {
         let id = matches[0];
 
         let product = document.getElementById(id);
-        console.log(product)
         
         let productImg = product.querySelector('img').src,
             productName = product.querySelector('.name').innerHTML,
@@ -39,8 +38,6 @@ class Product {
                 "(?:^|; )" + 'data'.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
                 ));
             value = matches ? decodeURIComponent(matches[1]) : undefined;
-            
-            console.log(value)
             
             if(value) {
                 value = JSON.parse(value);
