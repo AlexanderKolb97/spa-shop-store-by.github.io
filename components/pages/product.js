@@ -50,6 +50,7 @@ class Product {
                 updateCart()
             } else {
                 let id = product.id;
+                console.log(id);
                 value.push(id);
                 value = JSON.stringify(value);
                 document.cookie = `data=${value}`;
