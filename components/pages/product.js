@@ -33,12 +33,14 @@ class Product {
         this.content.appendChild(productShow);
 
         let addToCart = function() {
-            let value;
+            let value = [];
 
             let matches = document.cookie.match(new RegExp(
                 "(?:^|; )" + 'data'.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
                 ));
             value = matches ? decodeURIComponent(matches[1]) : undefined;
+            
+            console.log(value)
             
             if(value) {
                 value = JSON.parse(value);
