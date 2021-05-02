@@ -136,7 +136,7 @@
     }
     
     .app .main .main_content_wrapper .products_list .prod_content .description .btn_wrapper {
-        display: block;
+        display: block !important;
     }
 
     .app .main {
