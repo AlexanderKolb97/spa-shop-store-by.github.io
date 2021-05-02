@@ -268,11 +268,14 @@
 }
 
 @media (max-width: 426px) {
-/*     .header .cart_total,
-    .header .cart_subtotal {
-        display: none;
-    } */
-
+    .header .cart_total {
+        right: 50px;
+    }
+    
+    .header .cart_total .cart_subtotal {
+        right: -80px;
+    }
+    
     .app .header {
         padding: 50px 0;
     }
