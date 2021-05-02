@@ -111,7 +111,6 @@ class Cart {
         // logic of showing the cart
 
         if(value) {
-            console.log(value)
             value = JSON.parse(value);
 
             let cartList = document.createElement('ul');
