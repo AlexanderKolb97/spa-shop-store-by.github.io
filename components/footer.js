@@ -14,7 +14,7 @@ class Footer {
         this.create();
 
         let logo = document.createElement('img');
-        logo.setAttribute('src', '../img/girl-logo.png');
+        logo.setAttribute('src', './img/girl-logo.png');
         logo.classList.add('logo');
 
         let info = document.createElement('ul');
