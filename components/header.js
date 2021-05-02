@@ -27,18 +27,18 @@ class Header {
         }
 
         let logo = document.createElement('img');
-        logo.setAttribute('src', '../img/girl-logo.png');
+        logo.setAttribute('src', './img/girl-logo.png');
         logo.classList.add('logo');
 
         let logoLink = document.createElement('a');
-        logoLink.setAttribute('href', '/');
+        logoLink.setAttribute('href', '/spa-shop-store-by.github.io/');
         logoLink.classList.add('logo_link');
 
         let cart = document.createElement('a');
         cart.innerHTML = `
             <img src="../img/cart.png">
         `
-        cart.setAttribute('href', "/#cart");
+        cart.setAttribute('href', "/spa-shop-store-by.github.io/#cart");
         cart.classList.add('cart');
 
         let cartTotal = document.createElement('span');
