@@ -30,15 +30,15 @@ class Nav {
 
         let menuHome = document.createElement('li');
         menuHome.innerHTML = `
-            <a href="/">Home</label>
+            <a href="/spa-shop-store-by.github.io">Home</label>
         `;
         let menuShop = document.createElement('li');
         menuShop.innerHTML = `
-            <a href="/#shop">Shop</>
+            <a href="/spa-shop-store-by.github.io/#shop">Shop</>
         `;
         let menuContacts = document.createElement('li');
         menuContacts.innerHTML = `
-            <a href="/#contacts">Contacts</>
+            <a href="/spa-shop-store-by.github.io/#contacts">Contacts</>
         `;
 
         menu.appendChild(menuHome);
