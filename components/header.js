@@ -36,7 +36,7 @@ class Header {
 
         let cart = document.createElement('a');
         cart.innerHTML = `
-            <img src="../img/cart.png">
+            <img src="./img/cart.png">
         `
         cart.setAttribute('href', "/spa-shop-store-by.github.io/#cart");
         cart.classList.add('cart');
