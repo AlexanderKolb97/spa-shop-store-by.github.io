@@ -33,7 +33,7 @@ class Product {
         this.content.appendChild(productShow);
 
         let addToCart = function() {
-            let value;
+            let value = [];
 
             let matches = document.cookie.match(new RegExp(
                 "(?:^|; )" + 'data'.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
